@@ -1,3 +1,7 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
+import {DemonSlayerCharactersList} from './pages/demon-slayer-characters-list/demon-slayer-characters-list';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {path: '', redirectTo: 'demon-slayer', pathMatch: 'full'},
+  {path: "demon-slayer", component: DemonSlayerCharactersList}
+];
