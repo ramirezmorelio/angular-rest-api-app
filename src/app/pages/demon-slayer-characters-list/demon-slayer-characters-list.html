@@ -1,0 +1,13 @@
+<p>demon-slayer-characters-list works!</p>
+
+@for (item of characterList; track item.id) {
+  <app-character-card
+    [id]="item.id"
+    [name]="item.name"
+    [description]="item.description"
+    [image]="item.img">
+  </app-character-card>
+
+} @empty {
+  <p>no hay elemento para mostrar</p>
+}
