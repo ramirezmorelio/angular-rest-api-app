@@ -1,8 +1,9 @@
 import {Component, input} from '@angular/core';
+import {MatCard, MatCardContent, MatCardHeader} from '@angular/material/card';
 
 @Component({
   selector: 'app-character-card',
-  imports: [],
+  imports: [MatCard, MatCardHeader, MatCardContent],
   templateUrl: './character-card.html',
   styleUrl: './character-card.css',
 })
