@@ -1,6 +1,10 @@
-<p>character-card works!</p>
-<div class="main-container">
-  <img [src]=image() alt="{{name()}}">
-  <h3> {{ id() }} - {{ name() }}</h3>
-  <p> {{ description() }}</p>
-</div>
+<mat-card class="main-container">
+  <mat-card-header>
+    <img [src]=image() alt="{{name()}}">
+  </mat-card-header>
+  <mat-card-content>
+    <h3> {{ id() }} - {{ name() }}</h3>
+    <p> {{ description() }}</p>
+  </mat-card-content>
+
+</mat-card>
