@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {CharacterCard} from '../../components/character-card/character-card';
 import {CharacterModel} from '../../interfaces/character-model';
+import {CharacterCardType} from '../../enums/character-card-type';
 
 @Component({
   selector: 'app-demon-slayer-characters-list',
@@ -9,6 +10,8 @@ import {CharacterModel} from '../../interfaces/character-model';
   styleUrl: './demon-slayer-characters-list.css',
 })
 export class DemonSlayerCharactersList {
+
+  readonly characterCardType = CharacterCardType;
 
   characterList: CharacterModel[] = [
     {

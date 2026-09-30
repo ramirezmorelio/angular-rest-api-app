@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {CharacterCard} from '../../components/character-card/character-card';
 import {CharacterModel} from '../../interfaces/character-model';
+import {CharacterCardType} from '../../enums/character-card-type';
 
 @Component({
   selector: 'app-dbz-characters-list',
@@ -10,6 +11,7 @@ import {CharacterModel} from '../../interfaces/character-model';
 })
 export class DbzCharactersList {
 
+  readonly characterCardType = CharacterCardType;
   dbzCharacterList = [
     {
       "id": 1,

@@ -3,7 +3,7 @@
 @for (item of getDbzCharacterList(); track item.id) {
   <app-character-card
     [data]="item"
-    type="filled"
+    [type]="characterCardType.FILLED"
   >
   </app-character-card>
 

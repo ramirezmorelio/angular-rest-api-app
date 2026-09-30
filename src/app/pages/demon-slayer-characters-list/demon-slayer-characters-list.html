@@ -3,7 +3,7 @@
 @for (item of characterList; track item.id) {
   <app-character-card
     [data]="item"
-    type="rounded"
+    [type]="characterCardType.ROUNDED"
   >
   </app-character-card>
 
