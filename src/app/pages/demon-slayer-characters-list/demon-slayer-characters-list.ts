@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {CharacterCard} from '../../components/character-card/character-card';
+import {CharacterModel} from '../../interfaces/character-model';
 
 @Component({
   selector: 'app-demon-slayer-characters-list',
@@ -9,7 +10,7 @@ import {CharacterCard} from '../../components/character-card/character-card';
 })
 export class DemonSlayerCharactersList {
 
-  characterList = [
+  characterList: CharacterModel[] = [
     {
       "id": 1,
       "name": "Tanjiro Kamado",

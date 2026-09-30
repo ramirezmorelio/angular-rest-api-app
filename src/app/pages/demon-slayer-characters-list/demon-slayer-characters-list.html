@@ -2,10 +2,9 @@
 
 @for (item of characterList; track item.id) {
   <app-character-card
-    [id]="item.id"
-    [name]="item.name"
-    [description]="item.description"
-    [image]="item.img">
+    [data]="item"
+    type="rounded"
+  >
   </app-character-card>
 
 } @empty {

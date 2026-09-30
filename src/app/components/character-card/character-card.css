@@ -6,7 +6,18 @@
   margin: 10px;
 }
 
-img {
+mat-card-header {
+  width: 100%;
+}
+
+.image-filled {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.image-rounded {
   height: 150px;
   width: 150px;
   border-radius: 50%;
