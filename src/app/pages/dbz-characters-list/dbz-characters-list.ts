@@ -12,6 +12,7 @@ import {CharacterCardType} from '../../enums/character-card-type';
 export class DbzCharactersList {
 
   readonly characterCardType = CharacterCardType;
+
   dbzCharacterList = [
     {
       "id": 1,
@@ -49,14 +50,8 @@ export class DbzCharactersList {
     return {
       id: data.id,
       name: data.name,
-      age: 0,
-      gender: '',
-      race: '',
       description: data.description,
-      img: data.image,
-      affiliation_id: 0,
-      arc_id: 0,
-      quote: '',
+      img: data.image
     }
   }
 }

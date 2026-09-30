@@ -13,7 +13,7 @@ export class DemonSlayerCharactersList {
 
   readonly characterCardType = CharacterCardType;
 
-  characterList: CharacterModel[] = [
+  characterList = [
     {
       "id": 1,
       "name": "Tanjiro Kamado",
@@ -76,4 +76,18 @@ export class DemonSlayerCharactersList {
     }
   ]
 
+  getDemonSlayerCharacterList(): CharacterModel[] {
+    return this.characterList.map(
+      element => this.getCharacterModel(element)
+    );
+  }
+
+  getCharacterModel(data: any): CharacterModel {
+    return {
+      id: data.id,
+      name: data.name,
+      description: data.description,
+      img: data.img
+    }
+  }
 }
